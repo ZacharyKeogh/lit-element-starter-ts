@@ -6,6 +6,7 @@
 
 import {LitElement, html, css} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
+import { CheckerPattern } from "./ColorConstants.styles.js";
 
 /**
  * An example element.
@@ -22,6 +23,7 @@ export class MyElement extends LitElement {
       border: solid 1px gray;
       padding: 16px;
       max-width: 800px;
+      ${CheckerPattern}
     }
   `;
 
