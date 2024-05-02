@@ -13,6 +13,7 @@ if (!['dev', 'prod'].includes(mode)) {
 
 export default {
   nodeResolve: {exportConditions: mode === 'dev' ? ['development'] : []},
+  port: 7878,
   preserveSymlinks: true,
   plugins: [
     legacyPlugin({
